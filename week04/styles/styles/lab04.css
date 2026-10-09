@@ -45,7 +45,7 @@ images {
 }
 .special {
     color: darkorange;
-    font-weight: bold
+    font-weight: bold;
 }
 .right-align {
     text-align: right;
@@ -59,7 +59,7 @@ aside:hover {
 nav a {
     text-decoration: none;
     padding: 0.2em 0.6em;
-    border: 4px solid #c cc;
+    border: 4px solid #ccc;
 }
 
 nav a:hover {
