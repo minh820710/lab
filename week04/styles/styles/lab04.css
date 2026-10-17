@@ -37,7 +37,7 @@ h1, h2, h3 {
 table, th, td {
     border: 1px solid black;
 }
-images {
+#images {
     text-align: center;
 }
 #sub-heading {
@@ -66,3 +66,4 @@ nav a:hover {
     background-color: lightblue;
     border-color: darkblue;
 }
+

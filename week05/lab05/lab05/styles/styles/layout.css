@@ -41,31 +41,54 @@ footer {
 }
 #lists {
     float: left;
+    clear: right;
 }
 table {
     margin: auto;
+    
 }
 #tables {
-    float: right;
-    margin: auto;
+    float: left;
+    /* clear: left; */
+    
 }
 #hyperlinks {
-    clear:left; 
+    clear:left;
     float:left; 
+    
+    
 }
+
 #images {
-    float: right;
+     float: left; 
+     
 }
+
 figure {
     border: 2px solid #ccc;
 }
-#lists, #images, #tables, #hyperlinks{
-    width: 50%;
+/* #lists, #images, #tables, #hyperlinks{
+    width: 30%;
     text-align: center;
-}
+} */
 
 
-#lists, #images, #tables, #hyperlinks{width: 50%; text-align: center;}
+/* #images, #tables, #hyperlinks{
+    
+     width: 33,3%;
+    display: block;
+} */
+
+
+
+#lists, #images, #tables, #hyperlinks{width: 30%; text-align: center;}
+
+/* #images, #tables, #hyperlinks{
+    
+     width: 33,3%;
+     
+} */
+
 ol, ul, dl {text-align: left;}
 
 article {min-width:30em;}
