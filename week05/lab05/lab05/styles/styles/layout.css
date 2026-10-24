@@ -17,7 +17,12 @@ aside:hover {
 .menu {
     display: inline-block;
 }
-
+.listbox {
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+    text-align: center;
+}
 aside {
     border: 4px inset purple;
     border-radius: 14px;
@@ -45,7 +50,7 @@ footer {
 }
 table {
     margin: auto;
-    
+    text-align: left;
 }
 #tables {
     float: left;
@@ -60,7 +65,7 @@ table {
 }
 
 #images {
-     float: left; 
+     float: left;
      
 }
 
@@ -81,14 +86,19 @@ figure {
 
 
 
-#lists, #images, #tables, #hyperlinks{width: 30%; text-align: center;}
+#images, #tables, #hyperlinks{width: 30%; text-align: center; border: 4px}
 
 /* #images, #tables, #hyperlinks{
     
      width: 33,3%;
      
 } */
-
+.bottom-box {
+    border: 4px solid #ccc;
+    padding: 1em;
+    overflow: auto;
+    clear: both;
+}
 ol, ul, dl {text-align: left;}
 
 article {min-width:30em;}
