@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if (!isset($_SESSION['user'])) {
     header('Location: login.php');
     exit();
@@ -9,8 +8,7 @@ if (!isset($_SESSION['user'])) {
 <?php include 'header.inc'; ?>
 
 <main>
-    <h2>Welcome, <?php echo htmlspecialchars($_SESSION['user']); ?>!</h2>
-    <p>You have successfully logged in.</p>
+    <p><?php echo "Welcome, " . htmlspecialchars($_SESSION['user']); ?></p>
 </main>
 
 <?php include 'footer.inc'; ?>
