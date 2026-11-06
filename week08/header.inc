@@ -7,5 +7,5 @@
 </head>
 <body>
 <header>
-    <h1>Lab 08: Sessions, Includes and Hidden Fields</h1>
+    <h1>Login Form</h1>
 </header>
