@@ -1,13 +1,17 @@
 <?php
 session_start();
-$username = $_POST['username'] ?? '';
-$password = $_POST['password'] ?? '';
 
-if ($username == 'YourName' && $password == 'YourStudentID') {
-    $_SESSION['user'] = $username;
-    header('Location: welcome.php');
-    exit();
-} else {
-    echo "Invalid login. <a href='login.php'>Try again</a>";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username'] ?? '');
+    $password = $_POST['password'] ?? '';
+
+    if ($username === 'Minh Tat' && $password === 'SWC00073') {
+        $_SESSION['user'] = $username;
+        header('Location: welcome.php');
+        exit();
+    }
 }
-?>
+
+// Wrong details, or the page was opened directly
+header('Location: login.php?error=1');
+exit();
